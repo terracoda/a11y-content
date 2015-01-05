@@ -30,13 +30,12 @@
 
 \begin{document}
 
-\title{A Sample {\ttlit ACM} SIG Proceedings Paper in LaTeX
-Format\titlenote{(Does NOT produce the permission block, copyright information nor page numbering). For use with ACM\_PROC\_ARTICLE-SP.CLS. Supported by ACM.}}
-\subtitle{[Extended Abstract]
-\titlenote{A full version of this paper is available as
-\textit{Author's Guide to Preparing ACM SIG Proceedings Using
-\LaTeX$2_\epsilon$\ and BibTeX} at
-\texttt{www.acm.org/eaddress.htm}}}
+\title{Ramp it up! Action based guide for creating accessible websites}
+%\subtitle{[Extended Abstract]
+%\titlenote{A full version of this paper is available as
+%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+%\LaTeX$2_\epsilon$\ and BibTeX} at
+%\texttt{www.acm.org/eaddress.htm}}}
 %
 % You need the command \numberofauthors to handle the 'placement
 % and alignment' of the authors beneath the title.
@@ -79,7 +78,7 @@ Format\titlenote{(Does NOT produce the permission block, copyright information n
 %
 % 1st. author
 \alignauthor
-T.L. Smith\titlenote{MDes. (Candidate) Inclusive Design}\\
+Taliesin L. Smith\titlenote{MDes. (Candidate) Inclusive Design, OCAD University}\\
        \affaddr{OCAD University}\\
        \affaddr{Toronto, Ontario, Canada}\\
        \email{ts14hh@student.ocadu.ca}
@@ -106,8 +105,10 @@ T.L. Smith\titlenote{MDes. (Candidate) Inclusive Design}\\
 
 \maketitle
 \begin{abstract}
+\textit{Ramp it up} is an action based guide for coding in the virtual ramp to make websites and website content accessible to people of all abilities and disabilities. It is a reworking of the W3C's Web Content Accessibility Guideline's POUR principles. The action based techniques focus on making content perceivable, operable, understandable and robust. I visualize each potential barrier that a website might contain as a step that represents a particular content type or design choice. The corresponding techniques that enable web content to be accessible are then visualized as a virtual ramp. As we make our way up the staircase the content types and design choices become more complex, thus the virtual ramp requires more awareness, skills and resources to make the virtual stairs accessible.
+
 As designers, developers, content authors we continue to struggling 
-with working accessibility into our workflows. This action based 
+with working web accessibility into our workflows. This action based 
 guide summarizes and simplifies key aspects of the WCAG 2.0 and
 is intended to help people make design and development decisions 
 to remove barriers in websites and web applications.
@@ -121,7 +122,7 @@ to remove barriers in websites and web applications.
 
 \terms{Theory}
 
-\keywords{ACM proceedings, \LaTeX, text tagging} % NOT required for Proceedings
+\keywords{ACM proceedings, Web Accessibility, Accessibility, WCAG, Web Standards, Inclusive Design} % NOT required for Proceedings
 
 \section{Introduction}
 The \textit{proceedings} are the records of a conference.
@@ -384,9 +385,9 @@ logarithm $z$: \begin{displaymath}{\log e^z = z}\end{displaymath}
 
 \begin{figure}
 \centering
-\psfig{file=rosette.ps, height=1in, width=1in,}
-\caption{A sample black and white graphic (.ps format) that has
-been resized with the \texttt{psfig} command.}
+\epsfig{file=rosette.eps, height=1in, width=1in,}
+\caption{A sample black and white graphic (.eps format) that has
+been resized with the \texttt{epsfig} command.}
 \end{figure}
 
 Two lists of constructs that use one of these
