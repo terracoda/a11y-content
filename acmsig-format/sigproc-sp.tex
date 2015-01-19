@@ -74,25 +74,15 @@
 % 1st. author
 \alignauthor
 Taliesin L. Smith\titlenote{The author is also an Instructional Design Specialist at Memorial University, St.John's, Newfoundland Labrador}\\
-	   %\affaddr{Instructional Design Specialist}\\
-       \affaddr{MDes. (Candidate) Inclusive Design, }\\
-       \affaddr{OCAD University, }\\
+       \affaddr{MDes. (Candidate) Inclusive Design, }\affaddr{OCAD University, }\\
        \affaddr{Toronto, Ontario, Canada}\\
        \email{talilief@gmail.com}
-% 2nd. author
-%\alignauthor
-%T.L. Smith\titlenote{The secretary disavows
-%any knowledge of this author's actions.}\\
-%       \affaddr{OCAD University}\\
-%       \affaddr{P.O. Box 1212}\\
-%       \affaddr{Dublin, Ohio 43017-6221}\\
-%       \email{webmaster@marysville-ohio.com}
 }
-\date{10 January 2015}
+\date{19 January 2015}
 
 \maketitle
 \begin{abstract}
-\textit{Ramp it up} is an action-based guide to creating accessible websites. It is a visualization aid designed to help web teams integrate accessible design choices into their practices, thus resulting in websites that are more likely to comply with the W3C's Web Content Accessibility Guidelines (WCAG 2.0). The poster aims to help all members of the web development team - designers, developers, writers and project managers - better understand what to do, and what it takes to make sites accessible. Each stair represents a content type or design decision that could potentially introduce a barrier to a person with a disability. Associated with each stair is list of accessible techniques that, when implemented, builds in the virtual the ramp ensuring access to the website content. The action-based techniques (or ramp) focuses making sites that are perceivable, operable, understandable and robust. By focusing on the guidelines's POUR principles we hope teams are better equipped to integrate accessible practices without getting lost in highly technical and sometimes confusing language of the success criteria. 
+\textit{Ramp it up} is an action-based guide to creating accessible websites. It is a visualization aid designed to help web teams integrate accessible design choices into their practices, thus resulting in websites that are more likely to comply with the W3C's Web Content Accessibility Guidelines (WCAG 2.0). The poster aims to help all members of the web development team - designers, developers, writers and project managers. Each stair represents a content type or design decision that could potentially introduce a barrier to a person with a disability. Associated with each stair is a list of accessible techniques that, when implemented, builds in the virtual the ramp ensuring access to that website content. The action-based techniques (or ramp) focuses on making sites that are perceivable, operable, understandable and robust. By focusing on the guidelines' POUR principles we hope teams are better equipped to integrate accessible practices without getting lost in highly technical and sometimes confusing language of the success criteria. 
 
 \end{abstract}
 
@@ -100,15 +90,14 @@ Taliesin L. Smith\titlenote{The author is also an Instructional Design Specialis
 % \category{H.1.2}{User/Machine Systems}{Human Factors}
 %\category{D.2.8}{Software Engineering}{Metrics}[complexity measures, performance measures]
 \category{H.1.2}{User/Machine Systems}{Human Factors}
-\category{H.5.2}{User Interfaces}
-\category{H.5.4}{Hypertext/Hypermedia}
-\category{D.2.10}{Design}
+\category{H.5.2}{User Interfaces}{Standardization}
+\category{H.5.4}{Hypertext/ Hypermedia}{User issues}
+\category{D.2.10}{Design}{Methodologies}
 
-\terms{Management, Design, Human Factors, Standardization, Theory}
-people with diabilities, web accessibility, WCAG, Web Standards, Inclusive Design} % NOT required for Proceedings
+\terms{inclusive design, web accessibility, WCAG, standards} % NOT required for Proceedings
 
 \section{Introduction}
-A long term study (14-year period)[Hanson & Richards] found low compliance rates with the WCAG, but also uncovered a growing trend to adhere to some criteria. A follow-up study [Richard & Hanson] found that at least part of the improved accessibility was a side effect of changes in design and coding practices, improved browser capabilities and concerns over page search engine rankings. In another study on developer perceptions [Lazar et al], a lack of awareness and knowledge of the WCAG was found to be the most significant barrier to web accessibility. These studies show that web teams continue to struggle with correct implementation of the WCAG and suggesting that aids that make the guidelines easier to understand and implement could improve web accessibility. This action-based guide intends to do just that, help people better understand how to build in the virtual ramp through accessible design choices. 
+A long term study[7] found low compliance rates with the WCAG, but also a growing trend to adhere to some criteria. A follow-up study[10] found that at least part of the improved accessibility was a side effect of changes in coding practices, improved browser capabilities and concerns over page rankings. In another study [9], a lack of awareness and knowledge of the WCAG was found to be the most significant barrier to web accessibility. These studies show that web teams continue to struggle with correct implementation of the WCAG and suggest that aids that make the guidelines easier to understand and implement could improve web accessibility. This action-based guide intends to do just that, help people better understand how to build in the virtual ramp through accessible design choices. 
 
 \begin{figure*}
 \centering
@@ -123,7 +112,7 @@ A long term study (14-year period)[Hanson & Richards] found low compliance rates
 Electronic text-based content is accessible by nature. It can be rendered visually, auditorily and tactilely. Use HTML's built-in semantic structure [1] - headings, lists, quotes - to code meaning directly into your content. Keep the reading level as simple as possible. Define the natural language \& mark language changes. Ensure there is a doctype, charset \& a unique page title in each of your templates for a valid code base.
 
 \subsection{Navigation, Links \& Landmarks}
-Navigation, links and landmarks, like stepping stones, help you find your way. Use unique self-describing meaningful words for linked text. Keep links DRY [2] (do not repeat yourself over and over and over). Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA [3] landmark roles or HTML5 landmark tags to provide direct access to page content (formerly we used skip navigation links). Design well-planned, consistent navigation. Usability helps all users.
+Navigation, links and landmarks, like stepping stones, help you find your way [8]. Use unique self-describing meaningful words for linked text. Keep links DRY [2] (do not repeat yourself over and over and over). Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA [3] landmark roles or HTML5 landmark tags to provide direct access to page content (formerly we used skip navigation links). Design well-planned, consistent navigation. Usability helps all users.
 
 \subsection{Images \& Charts}
 Provide meaningful text alternatives for all content images. The alt attribute is required, but can be left empty, if appropriate. For charts or complex images you may need to link to supplementary content or use the longdesc attribute. The goal of text alternatives is to maintain the meaning of the document whether you can see the image or not.
@@ -145,7 +134,7 @@ Don't rely on colour alone for meaning. Choose colours wisely \& test for suffic
 Do not auto-play anything (think user control). Provide open or closed captions for audio and video. Describe video when the meaning cannot be understood by the soundtrack alone. Video description can be open or closed. Providing transcripts, in some cases (e.g. talking heads \& interviews), makes better sense than captions. For other formats, such as PDF or Word documents, first ask is there a reason not to use HTML? Follow the WCAG for content in Word documents and PDFs. PDFs must be tagged to be accessible [6].
 
 \section{Conclusions}
-When web design teams ramp up a website for users of assistive technology and other edge cases, the payoff happens at many levels. The website will likely be easier to find, be of a higher quality, be easier to maintain, last longer and work better for everyone - all of which contribute to a better return on the investment. Just like accessible ramps at building entrances, the virtual ramp built into websites benefits more than the intended audience.
+When web design teams ramp up a website for users with disabilities, the payoff happens at many levels. The website will be easier to find, be easier to maintain, last longer and work better for everyone - all of which contribute to a better return on the investment. Just like accessible ramps at building entrances, the virtual ramp built into websites benefits more than the intended audience.
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
@@ -155,8 +144,8 @@ Thanks to Amita Pharshy for her comments and to the {\it Accessible Icon Project
 %REFERENCES as a SECTION
 \section{References}
 \begin{itemize}
-\item[1] (2013) Semantic Structure. WebAIM.org. http://webaim.org/techniques/semanticstructure/
-\item[2] Don't reapeat yourself. Wikipedia.org. http://en.wikipedia.org/wiki/Don\%27t\_repeat\_yourself
+\item[1] (2013) Semantic Structure. WebAIM.org. \\http://webaim.org/techniques/semanticstructure/
+\item[2] Don't reapeat yourself. Wikipedia.org. \\http://en.wikipedia.org/wiki/Don\%27t\_repeat\_yourself
 \item[3] WAI-ARIA Overview. W3C.org. http://www.w3.org/WAI/intro/aria.php
 \item[4] Monsebraaten, L. (2010, Sep 19) Blind woman says federal websites discriminate against the visually
 impaired. Toronto Star.
@@ -164,13 +153,12 @@ http://www.thestar.com/news/gta/2010/09/19/blind\_woman\_says\_federal\_websites
 \item[5] Brewer, C. Harrower, M. \& Pennsylvania State University. Color Brewer 2.0 http://colorbrewer2.org/
 \item[6] Clark, J. (2005) Facts and Opinions About PDF Accessibility. A List Apart.
 http://alistapart.com/article/pdf\_accessibility
-\item Clark, J. (2003). {\it Building accessible websites.} Indianapolis: New Riders.
-\item Clark, J. (2005). Facts and Opinions About PDF Accessibility. {\it A List Apart}. Retrieved from http://alistapart.com/article/pdf\_accessibility
-\item Hanson, V. L., \& Richards, J. T. (2013). Progress on website accessibility? {\it ACM Transactions on the Web, 7}(1). DOI:10.1145/2435215.2435217
-\item Horton, S. \& Quesenbery, W. (2014). {\it A Web For Everyone.} Brooklyn: Rosenfeld Media.
-\item Accessible Icon Project: http://www.accessibleicon.org
+%\item Clark, J. (2003). {\it Building accessible websites.} Indianapolis: New Riders.
+\item [7] Hanson, V. L., \& Richards, J. T. (2013). Progress on website accessibility? {\it ACM Transactions on the Web, 7}(1).
+\item [8] Horton, S. \& Quesenbery, W. (2014). {\it A Web For Everyone.} Brooklyn: Rosenfeld Media.
+\item [9] Lazar, J., Dudley-Sponaugle, A. \& Greenidge, K. D. (2004). Improving web accessibility: as study of web master perceptions. {\it Computers in Human Behavior, 20}(2). pp 269-288.
+\item [10] Richards, J. T., Montague, K. \& Hanson, V. L., (2012). Web Accessibility as a Side Effect, {\it ASSETS '12 Proceedings of the 14th international ACM SIGACCESS conference on Computers and accessibility}. pp 79-86.
 \item W3C-WAI: http://www.w3.org/WAI
-\item WAI-ARIA: http://www.w3.org/WAI/intro/aria.php
 \item WCAG 2.0: http://www.w3.org/WAI/WCAG20/glance/Overview.html
 \item WCAG Samurai: http://www.wcagsamurai.org
 \item WCAG 1.0: http://www.w3.org/TR/WAI-WEBCONTENT
