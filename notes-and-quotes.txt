@@ -1,7 +1,6 @@
-This poster focuses on the implementation of POUR principles by visualizing design and development decisions as a stairs. 
-The visualization of the ramp (the numbered techniques for making HTML elements accessible) should not be viewed as a sequential process, since many are done concurrently during design and development.
+It is a visualization aid designed to help web teams integrate accessible design choices into their practices which will result in websites that are more likely to comply with the W3C's Web Content Accessibility Guidelines (WCAG 2.0). The poster aims to help all members of the web development team - designers, developers, writers and project managers - better understand what to do, and what it takes to make sites accessible. Each stair represents a content type or design decision that could potentially introduce a barrier to a person with a disability. Associated with each stair is list of accessible techniques that when implemented with build in the virtual the ramp ensuring access to that web content. The action-based techniques (or ramp) focus on the WCAG's POUR principles in order to help teams develop sites that are perceivable, operable, understandable and robust. By focusing on the guidelines's principles and clear action-based techniques we teams can 
 
-The techniques are organized not in a sequential process but according to the relative amount of awareness, skill and resources that are needed to make and execute accessible decisions. The visualization is meant to focus on the guiding principles to make web content perceivable, operable, understandable and robust (POUR) without getting hung up on meeting a particular grade on success criterion. This is not to diminish the testable criteria, they are needed to test in the throughout the process. It has been our experience that the POUR principles should be used to guide decision making.  
+ The visualization is meant to focus on the guiding principles to make web content perceivable, operable, understandable and robust (POUR) without getting hung up on meeting a particular compliance level of a success criterion. This is not to diminish the testable criteria, they are needed to test in the throughout the process. It has been our experience that the POUR principles should be used to guide decision making.  
 
 Our goal with this visualization is to help designers and developers understand the guidelines, not ignore them. 
 
@@ -11,7 +10,12 @@ If the guidelines are presented in a way that is more inline with the we make de
 
 This poster aims to increase awareness of accessibility and the integration of accessibility considerations into mainstream design and development processes.
 
-Visualization can help turn complex data i
+Visualization can help turn complex systems into something more understandable.
+
+A Cautionary Tale of Inaccessibility:Sydney Olympics Website
+http://www.w3.org/WAI/bcase/socog-case-study
 
 http://recueil.cmf.gc.ca/eng/2011/2010fc1197.html
 "10. for the blind and visually impaired, access information and services online gives them independence, self-reliance, control, ease of access, dignity and self-esteem. A person is not handicapped if she does not need help.  Making the government online information services accessible provides the visually impaired “substantive equality.”  This is like the ramp to permit wheelchair access to a building.  It is a ramp for the blind to access online services."  
+
+By focusing on the guidelines's principles and clear action-based accessibility techniques we hope to encourage teams to integrate accessible practices early in their processes in order to improve accessibility for everyone.   
