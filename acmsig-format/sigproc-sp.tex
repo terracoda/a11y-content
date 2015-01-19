@@ -92,7 +92,7 @@ Taliesin L. Smith\titlenote{The author is also an Instructional Design Specialis
 
 \maketitle
 \begin{abstract}
-\textit{Ramp it up} is an action based guide for coding in the virtual ramp to make websites and website content accessible to people of all abilities and disabilities. It is a reworking of the W3C's Web Content Accessibility Guideline's POUR principles. The action based techniques focus on making content perceivable, operable, understandable and robust. I visualize each potential barrier that a website might contain as a step that represents a particular content type or design choice. The corresponding techniques that enable web content to be accessible are then visualized as a virtual ramp. As we make our way up the staircase the content types and design choices become more complex, thus the virtual ramp requires more awareness, skills and resources to make the virtual stairs accessible.
+\textit{Ramp it up} is an action-based guide to creating accessible websites. It is a visualization aid designed to help web teams integrate accessible design choices into their practices, thus resulting in websites that are more likely to comply with the W3C's Web Content Accessibility Guidelines (WCAG 2.0). The poster aims to help all members of the web development team - designers, developers, writers and project managers - better understand what to do, and what it takes to make sites accessible. Each stair represents a content type or design decision that could potentially introduce a barrier to a person with a disability. Associated with each stair is list of accessible techniques that, when implemented, builds in the virtual the ramp ensuring access to the website content. The action-based techniques (or ramp) focuses making sites that are perceivable, operable, understandable and robust. By focusing on the guidelines's POUR principles we hope teams are better equipped to integrate accessible practices without getting lost in highly technical and sometimes confusing language of the success criteria. 
 
 \end{abstract}
 
@@ -105,8 +105,7 @@ Taliesin L. Smith\titlenote{The author is also an Instructional Design Specialis
 \category{D.2.10}{Design}
 
 \terms{Management, Design, Human Factors, Standardization, Theory}
-
-\keywords{Web Accessibility, Accessibility, WCAG, Web Standards, Inclusive Design} % NOT required for Proceedings
+people with diabilities, web accessibility, WCAG, Web Standards, Inclusive Design} % NOT required for Proceedings
 
 \section{Introduction}
 As designers, developers, content authors we continue to struggle with working web accessibility into our workflows. This action based guide summarizes and simplifies key aspects of the WCAG 2.0 and is intended to help people make design decisions that remove barriers in websites and web applications.
@@ -114,7 +113,7 @@ As designers, developers, content authors we continue to struggle with working w
 \begin{figure*}
 \centering
 \epsfig{file=stairs-ramp.eps, width=18cm}
-\caption{Each content type or design decision is visualized as stair or potential barrier. The numbered techniques outline how to build in the virtual ramp.}
+\caption{Each content type or design decision is visualized as stair or potential barrier. The numbers associate each stair with a list of action-based techniques that outline how to build in the virtual ramp.}
 \end{figure*}
 
 \section{Building in the {\secit Virtual} Ramp}
@@ -124,7 +123,7 @@ As designers, developers, content authors we continue to struggle with working w
 Electronic text-based content is accessible by nature. It can be rendered visually, auditorily and tactilely. Use HTML's built-in semantic structure [1] - headings, lists, quotes - to code meaning directly into your content. Keep the reading level as simple as possible. Define the natural language \& mark language changes. Ensure there is a doctype, charset \& a unique page title in each of your templates for a valid code base.
 
 \subsection{Navigation, Links \& Landmarks}
-Navigation, links and landmarks, like stepping stones, help you find your way. Use unique meaningful words for linked text. Keep links DRY [2] (do not repeat yourself over and over and over). Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA [3] landmark roles or HTML5 landmark tags to provide direct access to page content (formerly we used skip navigation links). Design well-planned, consistent navigation. Usability helps all users.
+Navigation, links and landmarks, like stepping stones, help you find your way. Use unique self-describing meaningful words for linked text. Keep links DRY [2] (do not repeat yourself over and over and over). Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA [3] landmark roles or HTML5 landmark tags to provide direct access to page content (formerly we used skip navigation links). Design well-planned, consistent navigation. Usability helps all users.
 
 \subsection{Images \& Charts}
 Provide meaningful text alternatives for all content images. The alt attribute is required, but can be left empty, if appropriate. For charts or complex images you may need to link to supplementary content or use the longdesc attribute. The goal of text alternatives is to maintain the meaning of the document whether you can see the image or not.
@@ -134,8 +133,8 @@ Simplify complex HTML structures \& user interactions wherever possible.
 \subsubsection{Tables}
 Use the rich semantic table mark-up available in HTML - thead, tfoot, tbody. Introduce tables with the caption element. Appropriately distinguish table header cells from table data cells (th, td) on rows and columns. Use tables only for tabular data - not content layout!
 
-\subsubsection{Forms}
-Keep forms simple - don't ask for data you don't need. Use \& associate labels for every form control. Use the button element when you need a button. Group form controls to create meaningful organization in forms - legend, fieldset, optgroup. Organization is good for all users. Design clear error identification \& intuitive error handling. Clearly tell the user where they have gone wrong, how to fix the problem and when they have succeeded. Provide reasonable time-outs (think user control). Employ WAI-ARIA [3] standard to define roles and behaviours that HTML cannot describe. This is particularly important for interactive structures like forms.
+\subsubsection{Forms \& Interactives}
+Keep forms simple - don't ask for data you don't need. Use \& associate labels for every form control. Use the button element when you need a button. Group form controls to create meaningful organization in forms - legend, fieldset, optgroup. Organization is good for all users. Design clear error identification \& intuitive error handling. Clearly tell the user where they have gone wrong, how to fix the problem and when they have succeeded. Provide reasonable time-outs (think user control). Employ WAI-ARIA [3] standard to define roles and behaviours that HTML cannot describe. This is particularly important for forms \& interactive structures that use forms (e.g. games, quizzes, etc.).
 
 Note: most legal cases have happened around in-accessible tables \& forms [4].
 
