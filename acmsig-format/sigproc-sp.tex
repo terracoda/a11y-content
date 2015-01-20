@@ -114,29 +114,29 @@ A long term study [7] found low compliance rates with the Web Content Accessibil
 Electronic text-based content is accessible by nature. It can be rendered visually, auditorily and tactilely. Use HTML's built-in semantic structure [1] - headings, lists, quotes - to code meaning directly into your content. Keep the reading level as simple as possible. Define the natural language \& mark language changes. Ensure there is a doctype, charset \& page title in each of your templates for a valid code base. Unique page titles reassures users they are in the right place.
 
 \subsection{Navigation, Links \& Landmarks}
-Navigation, links and landmarks, like stepping stones, help you find your way [8]. Use unique self-describing meaningful words for linked text. Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA [3] landmark roles or HTML5 landmark tags to provide direct access to page content (formerly we used skip-navigation links). Design well-planned, consistent navigation as accessible sites also need to be usable.
+Navigation, links and landmarks, like stepping stones, help you find your way [8]. Use unique self-describing meaningful words for linked text. Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA [3] landmark roles, HTML5 landmark tags or skip-navigation links to provide direct access to page content. Design well-planned, consistent navigation as accessible sites also need to be usable.
 
 \subsection{Images \& Charts}
 Provide meaningful text alternatives for all content images. The alt attribute is required, but can be left empty, if appropriate in the context. For charts or complex images you may need to link to supplementary content or use the longdesc attribute. The goal of text alternatives is to maintain the meaning of the document whether you can see the image or not.
 
 \subsection{Tables, Forms \& Interactives}
-Simplify complex HTML structures \& user interactions wherever possible.
-\subsubsection{Tables}
-Use the rich semantic table mark-up available in HTML - thead, tfoot, tbody. Introduce tables with the caption element. Appropriately distinguish table header cells from table data cells (th, td) on rows and columns. Use tables only for tabular data - not content layout!
+Simplify complex HTML structures such as tables \& forms whenever possible. user interactions wherever possible. Ensure all controls \& interactions are accessible via the keyboard.
+\subsubsection{Table}
+Table structure conveys meaning about the data within it. Use the rich semantic mark-up available for tables - caption, thead, tfoot, tbody to make data realtionship clear. Appropriately distinguish table header cells from table data cells (th, td) on rows and columns. Do not use tables for layout. They are for tabular data only!
 
 \subsubsection{Forms \& Interactives}
-Keep forms simple - don't ask for data you don't need. Use \& associate labels for every form control. Use the button element when you need a button. Group form controls to create meaningful organization in forms - legend, fieldset, optgroup. Organization is good for all users. Design clear error identification \& intuitive error handling. Clearly tell the user where they have gone wrong, how to fix the problem and when they have succeeded. Provide reasonable time-outs (think user control). Employ WAI-ARIA [3] standard to define roles and behaviours that HTML cannot describe. This is particularly important for forms \& interactive structures that use forms (e.g. games, quizzes, etc.).
+Keep forms simple - don't ask for data you don't need. Use \& associate labels for every form control. Use the button element when you need a button. Group form controls create meaningful organization in forms - legend, fieldset, optgroup. Organizational meaning is good for all users. Design clear error identification \& intuitive error handling by clearly telling the user where they have gone wrong, how to fix the problem and when they have succeeded. Provide reasonable time-outs (think user control). Employ WAI-ARIA [3] to define roles and behaviours that HTML cannot describe. This is particularly important for forms \& interactive structures that use forms (e.g. games, quizzes, etc.).
 
-Note: most legal cases have happened around in-accessible tables \& forms [4].
+Note: most legal cases have happened around in-accessible tables \& forms [0].
 
 \subsection{Colour \& Layout}
-Don't rely on colour alone for meaning. Choose colours wisely \& test for sufficient contrast ratios. Avoid confusing colours. The Brewer Palette is a good resource. Use CSS for layout  \& consistency. Using CSS \& HTML together properly is best method in making your content accessible \& easier to maintain.
+CSS is the standard to use for presentation. Use it correctly to maintain global control of your layout \& design. Using CSS \& HTML together properly is best method in making your content accessible \& easier to maintain. Choose colours wisely \& test for sufficient contrast ratios. Avoid confusing colours [0]. Don't rely on colour alone for meaning.
 
 \subsection{Audio, Video \& Other formats}
-Do not auto-play anything (think user control). Provide open or closed captions for audio and video. Describe video when the meaning cannot be understood by the soundtrack alone. Video description can be open or closed. Providing transcripts, in some cases (e.g. talking heads \& interviews), makes better sense than captions. For other formats, such as PDF or Word documents, first ask is there a reason not to use HTML? Follow the WCAG for content in Word documents and PDFs. PDFs must be tagged to be accessible [6].
+Like images multimedia need text alternatives to be made accessible. Controls for media must be operable by the keyboard. Think user control - do not auto-playing anything. Provide captions for video \& transcripts for audio. In some cases (e.g. talking heads, interviews) transcripts are make better sense than captions. For ultimate accessibilty describe video when the meaning cannot be understood by the soundtrack alone. For other formats, such as PDF or Word documents, first ask is there a reason not to use HTML? When HTML is not an option, one must follow the same principles (WCAG 2.0) to make content in Word documents and PDFs accessible. PDFs must be tagged to be accessible [0].
 
 \section{Conclusions}
-When web design teams ramp up a website for users with disabilities, the payoff happens at many levels. The website will be easier to find, be easier to maintain, last longer and work better for everyone - all of which contribute to a better return on the investment. Just like accessible ramps at building entrances, the virtual ramp built into websites benefits more than the intended audience.
+ It is well documented that making the choice for inclusion has beneficial side effects []. In the case of an accessible website it will be easier to find, load faster, be easier to maintain, change \& customize. It will work better with mobile devices, lasts longer \& be usable by more people - all of these are good for business \& contribute to a better bottom line. Just like accessibility ramps and curbcuts benefit more than just people in wheelchairs, accessible websites benefit many more than the intended audience.
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
@@ -157,6 +157,7 @@ Special thanks to the {\it Accessible Icon Project} for the icon and Amita Phars
 \item[6] Lazar, J., Dudley-Sponaugle, A. \& Greenidge, K. D. (2004). Improving web accessibility: as study of web master perceptions. {\it Computers in Human Behavior, 20}(2). pp 269-288.
 \item[7] Monsebraaten, L. (2012 Mar 31). Toronto woman wins  second victory ordering governemnt websites accessible to the blind. {\it Toronto Star.} http://www.thestar.com/
 \item[8] Richards, J. T., Montague, K. \& Hanson, V. L., (2012). Web Accessibility as a Side Effect, {\it ASSETS '12 Proceedings of the 14th international ACM SIGACCESS conference on Computers and accessibility}. pp 79-86.
+\item[0] CSS. http://www.w3.org/TR/CSS
 \item[0] WAI-ARI. http://www.w3.org/TR/wai-aria
 \item[0] WCAG 2.0. http://www.w3.org/TR/WCAG20
 %\item[0] WCAG Samurai: http://www.wcagsamurai.org
