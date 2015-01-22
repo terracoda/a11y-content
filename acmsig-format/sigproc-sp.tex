@@ -109,7 +109,7 @@ A long term study [4] found low compliance rates with the Web Content Accessibil
 
 \subsection{Text \& Solid Code Base}
 
-Electronic text-based content is accessible by nature. It can be rendered visually, auditorily \& tactilely teams: Use HTML's built-in semantic structure [2,6] - headings, lists, quotes - to code meaning directly into your content. Keep the reading level as simple as possible. Define the natural language \& mark language changes. Ensure templates have a doctype, charset \& page title (a valid code base). Make page titles unique so users know they are in the right place.
+Electronic text-based content is accessible by nature. It can be rendered visually, auditorily \& tactilely: Use HTML's built-in semantic structure [2,6] - headings, lists, quotes - to code meaning directly into your content. Keep the reading level as simple as possible. Define the natural language \& mark language changes. Ensure templates have a doctype, charset \& page title (a valid code base). Make page titles unique so users know they are in the right place.
 
 \subsection{Navigation, Links \& Landmarks}
 Navigation, links \& landmarks, like stepping stones, help you find your way [6]. Use unique self-describing meaningful words for linked text. Leave context changes - pop-ups, new tabs - in the control of the user. Use WAI-ARIA landmark roles [6], HTML5 landmark tags or skip-navigation links to provide direct access to page content. Design well-planned, consistent navigation to make sites accessible \& usable.
@@ -119,7 +119,7 @@ Provide meaningful text alternatives for all content images. The alt attribute i
 
 \subsection{Tables, Forms \& Interactives}
 For complex HTML structures, consider simplification whenever possible. For successful interaction the keyboard must be your guide.
-\subsubsection{Table structure converys meaning}
+\subsubsection{Table structure conveys meaning}
 Use the rich semantic mark-up available for tables - caption, thead, tfoot, tbody - to make data realtionships clear. Appropriately distinguish table header cells from table data cells (th, td) on rows \& columns. Do not use tables for layout. They are for tabular data only!
 \subsubsection{Forms \& Interactives are complex by nature}
 Keep user control \& keyboard access top of mind. Use \& associate labels for every form control. Use the button element when you need a button. Exploit group form controls to create meaningful organization - legend, fieldset, optgroup. Organizational meaning is good for usability. Design clear error identification \& intuitive error handling by clearly telling the user where they have gone wrong, how to fix the problem \& when they have succeeded. Provide reasonable time-outs (think user control). Employ WAI-ARIA [6] to define roles \& behaviours that HTML cannot describe. This is particularly important for forms \& interactive structures that use forms.
@@ -130,10 +130,10 @@ Note: most legal cases have happened around inaccessible tables \& forms [9].
 CSS is the standard to use for presentation. Use it correctly to maintain global control of your layout \& design. Using CSS \& HTML together properly is best method in making your content accessible \& easier to maintain. Choose colours wisely \& test for sufficient contrast ratios. Avoid confusing colours [1]. Don't rely on colour alone for meaning.
 
 \subsection{Audio, Video \& Other formats}
-Like images multimedia need text alternatives to be made accessible. Controls for media must be operable by the keyboard. Provide captions for video \& transcripts for audio. For ultimate accessibilty describe video when the meaning cannot be understood by the soundtrack alone. Do not auto-play anything (think user control). For other formats, such as PDF or Word documents, first ask is there a reason not to use HTML? When HTML is not an option, one must follow the same principles (WCAG) to make content in documents accessible.
+Like images multimedia need text alternatives to be made accessible. Provide captions for video \& transcripts for audio. For ultimate accessibilty describe video when the meaning cannot be understood by the soundtrack alone. Controls for media must be operable by the keyboard. Do not auto-play anything (think user control). For other formats, such as PDF or Word documents, first ask is there a reason not to use HTML? When HTML is not an option, follow the same principles (WCAG) discussed here to make content in documents accessible.
 
 \section{Conclusions}
-Creating websites that meet the needs of people with disabilities including auditory, cognitive, neurological, physical, speech \& visual impairments overlap with people with situational limitations such as being in a loud environment, having limited use of hands, using a mobile device, using old hardware or having limited access to bandwidth [5]. Just as access ramps \& curbcuts benefit more than just people in wheelchairs, the virtual ramp or electronic curbcut [7] benefits all people. Making accessibility a priority in the design process helps us build better websites \& brings us closer to a universal web [5].
+Creating websites that meet the needs of people with disabilities overlaps with people with situational limitations such as being in a loud environment, having limited use of hands, using a mobile device, using old hardware or having limited access to bandwidth [5]. Just as access ramps \& curbcuts benefit more than just people in wheelchairs, the \textit{virtual ramp} or \textit{electronic curbcut} [7] benefits more than just people using assitive technology. Making accessibility a priority in the design process helps us build better websites \& brings us closer to a universal web [5].
 %\end{document}  % This is where a 'short' article might terminate
 
 %ACKNOWLEDGMENTS are optional
@@ -145,14 +145,14 @@ Special thanks to the {\it Accessible Icon Project} \& Amita Pharshy.
 \begin{itemize}
 %\item[1] (2013) Semantic Structure. WebAIM.org. \\http://webaim.org/techniques/semanticstructure/
 %\item[1] Don't reapeat yourself. Wikipedia.\\http://wikipedia.org/wiki/Don't\_repeat\_yourself
-\item[1] Brewer, C. Harrower, M. \& Pennsylvania State University. Color Brewer 2.0 http://colorbrewer2.org/
+\item[1] Brewer, C. Harrower, M. \& Pennsylvania State University. {\it Color Brewer 2.0}. http://colorbrewer2.org/
 \item[2] Clark, J. (2003). {\it Building accessible websites.} Indianapolis: New Riders.
 %\item[6] Clark, J. (2005). Facts and opinions about PDF accessibility. {\it %A List Apart.}\\http://alistapart.com/article/pdf\_accessibility
-\item[4] Hanson, V., \& Richards, J. (2013). Progress on website accessibility? {\it ACM Transactions on the Web, 7}(1).
-\item[5] Henry, S., Abou-Zahra, S., \& Brewer, J. (2014). The role of accessibility in a universal web. Paper presented at the {\it W4A - 11th Web for All 2014 Conference}. Retrieved from doi:10.1145/2596695.2596719
+\item[4] Hanson, V., \& Richards, J. (2013). Progress on website accessibility? {\it ACM Transactions on the Web, 7}(1). DOI:10.1145/2435215.2435217 
+\item[5] Henry, S., Abou-Zahra, S., \& Brewer, J. (2014). The role of accessibility in a universal web. Paper presented at the {\it W4A - 11th Web for All 2014 Conference}. DOI:10.1145/2596695.2596719
 \item[6] Horton, S. \& Quesenbery, W. (2014). {\it A Web for everyone: Designing accessible user experiences.} Brooklyn: Rosenfeld Media.
 \item[7] Jacobs, S. (1999). Section 255 of the Telecommunications Act of 1996: Fueling the Creation of New Electronic Curbcuts. http://www.accessiblesociety.org/topics/\\technolog/eleccurbcut.htm 
-\item[8] Lazar, J., Dudley-Sponaugle, A. \& Greenidge, K. (2004). Improving web accessibility: as study of web master perceptions. {\it Computers in Human Behavior, 20}(2). pp 269-288.
+\item[8] Lazar, J., Dudley-Sponaugle, A. \& Greenidge, K. (2004). Improving web accessibility: as study of web master perceptions. {\it Computers in Human Behavior, 20}(2). pp 269-288. DOI: 10.1016/j.chb.2003.10.018 
 \item[9] Monsebraaten, L. (2012). Toronto woman wins second victory ordering governemnt websites accessible to the blind. {\it Toronto Star}. http://www.thestar.com/news/\\gta/2012/05/31/toronto\_woman\_wins\_second\_victory\_\\ordering\_government\_websites\_accessible\_to\_blind.html
 \item[10] Richards, J., Montague, K. \& Hanson, V. (2012). Web Accessibility as a Side Effect, {\it ASSETS '12 Proceedings of the 14th International ACM SIGACCESS Conference on Computers \& Acessibility}. pp 79-86.
 %\item[11] CSS. http://www.w3.org/TR/CSS
