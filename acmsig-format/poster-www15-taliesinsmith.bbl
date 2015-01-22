@@ -1,0 +1,54 @@
+\begin{thebibliography}{1}
+
+\bibitem{brewer:pal}
+C.~Brewer, M.~Harrower, and P.~S. University.
+\newblock {\em Color Brewer 2.0}.
+\newblock PennState, http://colorbrewer2.org, 2013.
+
+\bibitem{clark:baw}
+J.~Clark.
+\newblock {\em Building Accessible Websites}.
+\newblock New Riders, Indianapolis, 2003.
+
+\bibitem{hanson:progress}
+V.~L. Hanson and J.~T.Richards.
+\newblock Progress on website accessibility?
+\newblock {\em ACM Transactions on the Web}, 7(1):1--30, March 2013.
+
+\bibitem{henry:role}
+S.~L. Henry, S.~Abou-Zahra, and J.~Brewer.
+\newblock The role of accessibility in a universal web.
+\newblock In {\em Proceedings of the 11th Web for All Conference}, pages 1--4.
+  W4A, April 2014.
+
+\bibitem{horton:w4e}
+S.~Horton and W.~Quesenbery.
+\newblock {\em A Web for Everyone: Designing Accessible User Experiences}.
+\newblock Rosenfeld Media, Brooklyn, 2014.
+
+\bibitem{jacobs:curb}
+S.~Jacobs.
+\newblock {\em Section 255 of the Telecommunications Act of 1996: Fueling the
+  Creation of New Electronic Curbcuts}.
+\newblock Accessible Society,
+  http://www.accessiblesociety.org/topics/technolog/eleccurbcut.htm, 1999.
+
+\bibitem{lazar:perceptions}
+J.~Lazar, A.~Dudley-Sponaugle, and K.-D. Greenidge.
+\newblock Improving web accessibility: as study of web master perceptions.
+\newblock {\em Computers in Human Behavior}, 20(2):268--288, 2004.
+
+\bibitem{monsebraaten:victory}
+L.~Monsebraaten.
+\newblock Toronto woman wins second victory ordering governemnt websites
+  accessible to the blind.
+\newblock {\em Toronto Star}, May 2012.
+
+\bibitem{richards:side}
+J.~T.Richards, K.~Montague, and V.~L. Hanson.
+\newblock Web accessibility as a side effect.
+\newblock In {\em Proceedings of the 14th International ACM SIGACCESS
+  Conference on Computers and Acessibility}, pages 79--86. ASSETS '12, October
+  2012.
+
+\end{thebibliography}
