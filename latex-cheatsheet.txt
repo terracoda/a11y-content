@@ -13,6 +13,7 @@ $\times$ - times sign
 \section{The {\secit Body} of The Paper}
 \textbf{document}
 \tt{typewriter text}
+\ldots
 
 The command \texttt{{\char'134}section}
 
