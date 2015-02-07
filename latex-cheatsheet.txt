@@ -1,5 +1,12 @@
 This repo is for my text-based content on web accessibility.
 
+To compile with .bib file you have to run latex a few times
+$ latex myarticle
+$ bibtex myarticle
+$ latex myarticle
+$ latex myarticle
+$ pdflatex myarticle
+
 LaTeX Tips
 
 \begin{abstract}
