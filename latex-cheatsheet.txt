@@ -102,4 +102,20 @@ to create the ~.bbl file.  Insert that ~.bbl file into
 the .tex source file and comment out
 the command \texttt{{\char'134}thebibliography}.
 
+Bibtex
+@BOOK{cite_key:cite_key,
+    TITLE = "field_text",
+    AUTHOR = "field_text",
+    EDITOR = "field_text",
+    PUBLISHER = "field_text",
+    YEAR = "field_text",
+    [VOLUME = "field_text",
+    SERIES = "field_text",
+    ADDRESS = "field_text",
+    EDITION = "field_text",
+    MONTH = "field_text",
+    NOTE = "field_text",
+    KEY = "field_text"]
+}
+
 
