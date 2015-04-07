@@ -1,0 +1,182 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Accessibility Cheat Sheet</title>
+	<link href='css/normalize.css' rel='stylesheet' type='text/css'> 
+	<link href='css/project.css' rel='stylesheet' type='text/css'>
+	
+</head>
+<body>
+<nav role="navigation">
+	 <ul id="menu-about">
+    	<li><a href="#abstract">Abstract</a></li>
+    	<li><a href="#intro">Intro</a></li>
+			<li><a href="#references">References</a></li> 
+		</ul>
+		<ul id="chapters"> 
+			<li><a href="#tech01">1</a></li>
+			<li><a href="#tech02">2</a></li>
+			<li><a href="#tech03">3</a></li>
+			<li><a href="#tech04">4</a></li> 
+			<li><a href="#tech05">5</a></li> 
+			<li><a href="#tech06">6</a></li>
+		</ul>
+</nav>
+<header role="banner">
+	<h1>Ramp it up!</h1>
+	<h2>Action-based guide for building accessible websites</h2> 
+</header>
+
+<main role="main">
+<section id="abstract" class="box">
+	<h2>Abstract</h2>
+<p>Presented here is an action-based guide to create accessible websites. By focusing on accessibility rather than compliance this guide will help teams create sites that are perceivable, operable, understandable &amp; robust. The <abbr>POUR</abbr> principles of the Web Content Accessibility Guidelines (WCAG 2.0) are what all the other layers of guidance in the <abbr>WCAG</abbr> aim to achieve. The simplified techniques presented here focus on accessible design decisions &amp; reframe the <abbr>WCAG</abbr>&apos;s layers into something all members of the web team - designers, developers, writers &amp; managers - can understand. To build in the <em>virtual ramp</em> the entire team needs to be aware, develop the skill &amp; demand the necessary resources.</p>
+</section>
+
+<section id="intro" class="box">
+	<h2>Introduction</h2>
+	<p>A long term study [hanson:progress] found low compliance rates with the Web Content Accessibility Guidelines (<abbr>WCAG</abbr>), but at the same time, uncovered a growing adherence to <em>some</em> criteria. A follow-up study [richards:side] found that at least part of the improved accessibility was a side effect of changes in coding practices, new browser capabilities &amp; concerns over page rankings. In another study [lazar:perceptions], <em>lack of awareness &amp; knowledge of the <abbr>WCAG</abbr></em> was identified by the participants to be the most significant barrier to web accessibility. These studies show that web teams continue to struggle with correct implementation of the WCAG &amp; suggest that aids that make the guidelines easier to understand could improve implementation. This poster intends to do just that, present the guidelines in a way that keeps team members focused on accessibility &amp; building in the <em>virtual ramp</em>.</p> 
+
+	 <figure>
+	       <img src="images/ramp.png">
+	<figcaption>Each content type &amp; design decision is a potential barrier (stair). The numbers associate each stair with techniques for building in the <em>virtual ramp</em>.</figcaption>
+	</figure>
+</section>
+
+<section id="tech01" class="box">
+	<h2>1. Text &amp; Solid Code Base</h2>
+	<p>Electronic text-based content is accessible by nature. It can be rendered visually, auditorily &amp; tactilely:</p>
+	<ul>
+		<li>Use HTML&apos;s built-in semantic structure [clark:baw, horton:w4e] - headings, lists, quotes - to code meaning directly into your content.</li>
+		<li>Keep the reading level as simple as possible. </li>
+		<li>Define the natural language &amp; mark language changes. </li>
+		<li>Ensure templates have a doctype, charset &amp; page title (a valid code base). </li>
+		<li>Make page titles unique so users know they are in the right place. </li>
+	</ul>
+</section>
+
+<section id="tech02" class="box"> 
+	<h2>2. Navigation, Links &amp; Landmarks</h2>
+	<p>Navigation, links &amp; landmarks, like stepping stones, help you find your way [horton:w4e].</p>
+	<ul>
+		<li>Use unique self-describing meaningful words for linked text. </li>
+		<li>Leave context changes - pop-ups, new tabs - in the control of the user. </li>
+		<li>Use <abbr>WAI-ARIA</abbr> landmark roles [horton:w4e], HTML5 landmark tags or skip-navigation links to provide direct access to page content. </li>
+		<li>Design well-planned, consistent navigation to make sites accessible &amp; usable. </li>
+	</ul>
+</section>
+
+
+<section id="tech03" class="box"> 
+	<h2>3. Images &amp; Charts </h2>
+	<p>Images are not text and need a text-based description or alternative to make them accessible. The goal of text descriptions and alternatives is to maintain the meaning of the document whether you can see the image or not. The alt attribute is required, but can be left empty in circumstances where the image provides no meaning or is described elsewhere in the content.</p>
+	<ul>
+		<li>Provide meaningful text alternatives for all content images.</li>
+		<li>Use the <code>alt</code> attribute is required, but:
+			 	<ul>
+					<li>Keep it succinct as it is read inline. One-hundred characters is a good rule of thumb.</li>
+					<li>Leave the it blank (<code>alt=""</code>) when the image is purely decorative.</li>
+					<li>Leave the it blank when the image&apos;s meaning is fully described in the text near by.</li>
+					<li>Do not repeat <code>alt</code> attribute content in the <abbr>title</abbr> attribute - may cause unnecessary verbosity for screen reader users.</li> 	
+					<li>Describe the function of the link in the alt, if the image is a hyperlink.</li>
+				</ul>
+		<li>For charts or complex images you may need to link to supplementary content or use the <code>longdesc</code> attribute.</li> 
+	 </ul>
+</section>
+
+<section id="tech04" class="box">
+<h2>4. Tables, Forms &amp; Interactives</h2>
+	<p>For complex <abbr>HTML</abbr> structures, consider simplification whenever possible. For successful interaction the keyboard must be your guide.</p>
+
+<h3>Table structure conveys meaning</h3>
+	<ul>
+		<li>Use the rich semantic mark-up available for tables to make data relationships clear.
+			<ul>
+				<li><code>caption</code>,</li>
+				 <li><code>thead</code>, </li>
+				<li><code>tfoot</code>, </li>
+				<li><code>tbody</code> </li>
+			</ul></li>
+		<li>Appropriately distinguish table header cells from data cells on rows &amp; columns.
+			 <ul>
+				<li><code>th</code>, </li>
+				<li><code>td</code></li>
+				</ul></li>
+		<li>Do not use tables for layout. They are for tabular data only!</li>
+	</ul>
+
+<h3>Forms &amp; Interactives are complex by nature</h3>
+	<ul>
+		<li>Keep user control &amp; keyboard access top of mind. </li>
+		<li>Use &amp; associate labels for every form control. </li>
+		<li>Use the button element when you need a button. </li>
+		<li>Exploit group form controls to create meaningful organization - legend, fieldset, optgroup. Organizational meaning is good for usability. </li>
+		<li>Design clear error identification &amp; intuitive error handling by clearly telling the user where they have gone wrong, how to fix the problem &amp; when they have succeeded. Provide reasonable time-outs (think user control). </li>
+		<li>Employ <abbr>WAI-ARIA</abbr> [horton:w4e] to define roles &amp; behaviours that <abbr>HTML</abbr> cannot describe. This is particularly important for forms &amp; interactive structures that use forms.</li>
+		</ul>
+
+	<p class="note">Note: most legal cases have happened around inaccessible tables &amp; forms [monsebraaten:victory].</p>
+</section>
+
+<section id="tech05" class="box"> 
+ <h2>5. Colour &amp; Layout</h2>
+	<p><abbr>CSS</abbr> is the standard to use for presentation. Use it correctly to maintain global control of your layout &amp; design. Using <abbr>CSS</abbr> &amp; <abbr>HTML</abbr> together properly is best method in making your content accessible &amp; easier to maintain.</p>
+	<ul>
+		<li>Choose colours wisely &amp; test for sufficient contrast ratios. </li>
+		<li>Avoid confusing colours [brewer:pal]. </li>
+		<li>Don't rely on colour alone for meaning.</li>
+	</ul>
+</section>
+
+<section id="tech06" class="box"> 
+	<h2>6. Audio, Video &amp; Other formats</h2>
+	<p>Like images, multimedia need text alternatives to be made accessible.</p>
+	<ul>
+		<li>Provide captions for video &amp; transcripts for audio. </li>
+		<li>For ultimate accessibility describe video when the meaning cannot be understood by the soundtrack alone. </li>
+		<li>Controls for media must be operable by the keyboard. </li>
+		<li>Do not auto-play anything [wcagsam] (think user control).</li>
+	 </ul> 
+	
+	<p class="note">For other formats, such as <abbr>PDF</abbr> or Word documents, first ask is there a reason not to use <abbr>HTML</abbr>? When <abbr>HTML</abbr> is not an option, follow the same principles (<abbr>WCAG</abbr>) discussed here to make content in documents accessible.</p>
+</section>
+
+<section id="conclusions" class="box">
+	<h2>Conclusions</h2>
+	<p>Creating websites that meet the needs of people with disabilities overlaps with people with situational limitations such as being in a loud environment, having limited use of hands, using a mobile device, using old hardware or having limited access to bandwidth [henry:role]. Just as access ramps &amp; curb cuts benefit more than just people in wheelchairs, the <i>virtual ramp</i> or <i>electronic curb cut</i> [jacobs:curb] benefits more than just people using assistive technology. Making accessibility a priority in the design process helps us build better websites &amp; brings us closer to a universal web [henry:role]. </p>
+</section>
+
+<section id="references" class="box"> 
+	<h2>References</h2>
+<ol>
+	<li>(2013) Semantic Structure. <a href="http://webaim.org/techniques/semanticstructure/">WebAIM.org</a>.</li>
+	<li><a href="http://wikipedia.org/wiki/Don't_repeat_yourself">Don&apos;t repeat yourself</a>. Wikipedia.</li>
+	<li>Brewer, C., Harrower, M. &amp; Pennsylvania State University. <i><a href="http://colorbrewer2.org/">Color Brewer 2.0</a></i>. </li>
+	<li>Clark, J. (2003). <i>Building accessible websites</i>. Indianapolis: New Riders.</li>
+	<li>Clark, J. (2005). Facts and opinions about PDF accessibility. <a href="http://alistapart.com/article/pdf_accessibility"><i>A List Apart</i></a>.</li>
+	li>Hanson, V. &amp; Richards, J. (2013). Progress on website accessibility? <i>ACM Transactions on the Web, 7</i>(1). DOI:10.1145/2435215.2435217</li>
+	<li>Henry, S., Abou-Zahra, S., &amp; Brewer, J. (2014). The role of accessibility in a universal web. Paper presented at the <i>W4A - 11th Web for All 2014 Conference</i>. DOI:10.1145/2596695.2596719</li>
+	<li>Horton, S. &amp; Quesenbery, W. (2014). <i>A Web for everyone: Designing accessible user experiences</i>. Brooklyn: Rosenfeld Media.</li>
+	<li>Jacobs, S. (1999). <a href="http://www.accessiblesociety.org/topics/technolog/eleccurbcut.htm">Section 255 of the Telecommunications Act of 1996: Fueling the Creation of New Electronic Curbcuts</a>.</li>
+	<li>Lazar, J., Dudley-Sponaugle, A. &amp; Greenidge, K. (2004). Improving web accessibility: as study of web master perceptions. <i>Computers in Human Behavior</i>, 20(2). pp 269-288. DOI: 10.1016/j.chb.2003.10.018 </li>
+	<li>Monsebraaten, L. (2012). <a href="http://www.thestar.com/news/gta/2012/05/31/toronto_woman_wins_second_victory_ordering_government_websites_accessible_to_blind.html">Toronto woman wins second victory ordering government websites accessible to the blind</a>. <i>Toronto Star</i>.</li>
+	<li>Richards, J., Montague, K. &amp; Hanson, V. (2012). Web Accessibility as a Side Effect, <i>ASSETS '12 Proceedings of the 14th International ACM SIGACCESS Conference on Computers &amp; Accessibility</i>. pp 79-86.</li>
+	<li>CSS. <a href="http://www.w3.org/TR/CSS">http://www.w3.org/TR/CSS</a></li>
+	<li>WAI-ARI. <a href="http://www.w3.org/TR/wai-aria">http://www.w3.org/TR/wai-aria</a></li>
+	<li>WCAG 2.0. <a href="http://www.w3.org/TR/WCAG20">http://www.w3.org/TR/WCAG20</a></li>
+	<li>WCAG Samurai: <a href="http://www.wcagsamurai.org">http://www.wcagsamurai.org</a></li>
+	<li>WCAG 1.0: <a href="http://www.w3.org/TR/WAI-WEBCONTENT">http://www.w3.org/TR/WAI-WEBCONTENT</a></li>
+</ol>
+</section>
+
+<section id="acks" class="box"> 
+	<h2>Acknowledgements</h2>
+	<p>Special thanks to the <a href="http://www.accessibleicon.org/icon.html"><cite>Accessible Icon Project</cite></a> for a beautiful icon.</p>
+</section>
+</main>
+<footer role="contentinfo">
+	<p>Taliesin L. Smith</p>
+</footer>	
+</body>
+</html>
