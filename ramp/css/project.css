@@ -98,11 +98,7 @@ img.profile {
 	margin: 0 20px 0 0;
 	width: 150px;
 	}
-nav ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
+nav {
 	border-bottom: 3px solid #f39800;
 	background: #001b70;
 	position: fixed;
@@ -110,16 +106,32 @@ nav ul {
 	left: 0;
 	width: 100%;
 	}
-#menu-about {
-	border-color: #000000;
-}
-#chapters {
-   	top: 2em;
-	left: 0;
+nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;    
 }
 nav li {
-	display: inline-block;
+	color: #ffffff;
+	display: inline-block; 
+	margin: 0;
+	padding: 0;
 	}
+h3.label {
+	font-family: Helvetica, Arial, sans-serif;
+	color: #ffffff; 
+	font-size: 1em;
+	padding: 10px 0 0 0;
+	margin: 0;
+	float: left; 
+}
+nav ul ul {
+	float: left;
+}
+nav ul ul li{
+	height: 100%;
+}
 nav a {
 	display: inline-block;
 	padding: 10px;
@@ -144,18 +156,25 @@ nav a:active {
 	text-transform: uppercase;
 	border-bottom: none;
 	}
-header, footer {
+header {
 	color: #000000;
-	padding-top: 3em;
-	padding-bottom: 2em;
+	padding-top: 8em;
+	padding-bottom: 4em;
   	background-color: #0168bd; /*url('../images/background-surfer.png') no-repeat; */
 	background-attachment: fixed;
+	text-align: center;
+	}
+footer {
+	color: #000000;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-color: #0168bd;
 	text-align: center;
 	}
 header h1 {
 	color: #ffffff;
 	text-transform: uppercase;
-	margin-bottom: 0.25em;
+	margin: 0.25em;
 	}
 header h2, footer h2 {
 	color: #ffffff;
@@ -166,6 +185,7 @@ header p, footer p {
 	margin: 0;
 	padding: 0;
 	font-size: 1.5em;
+	color: #ffffff;
 	}
 main section:nth-child(even) {
 	 background-color: #d1e4f3; /*#bad6ed */   
@@ -179,7 +199,7 @@ section#about {
 }
 
 section.box {
-	padding: 25px 75px;
+	padding: 4.25em 4em;
 }
 .panel {
 	display: inline-block;
