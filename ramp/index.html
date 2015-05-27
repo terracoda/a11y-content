@@ -10,16 +10,16 @@
 <body>
 	<header role="banner">
 		<h1>Ramp it up!</h1>
-		<h2>Action-based techniques for building accessible websites</h2> 
+		<h2>Action-based guide for building accessible websites</h2> 
 	</header>
 <nav role="navigation">
 	 <ul id="menu-about">
-    	<li><a href="#abstract">Abstract</a></li>
-    	<li><a href="#intro">Intro</a></li>
-			<li><a href="#references">References</a></li> 
+    	<li><a href="#intro">Intro (top)</a></li>
+			<li><a href="#references">References</a></li>
+			<li><a href="#resources">Resources</a></li> 
 		</ul>
 		 <ul id="chapters">
-			<li><h3 class="label">Techniques:</h3>
+			<li><h3 class="label">Techniques for the Ramp:</h3>
 			<ul> 
 			<li><a href="#tech01">1</a></li>
 			<li><a href="#tech02">2</a></li>
@@ -31,23 +31,21 @@
 		</ul>
 </nav>
 <main role="main">
-<section id="abstract" class="box">
-	<h2>Abstract</h2>
-<p>Presented here is an action-based guide to create accessible websites. By focusing on accessibility rather than compliance this guide will help teams create sites that are perceivable, operable, understandable &amp; robust. The <abbr>POUR</abbr> principles of the Web Content Accessibility Guidelines (WCAG 2.0) are what all the other layers of guidance in the <abbr>WCAG</abbr> aim to achieve. The simplified techniques presented here focus on accessible design decisions &amp; reframe the <abbr>WCAG</abbr>&apos;s layers into something all members of the web team - designers, developers, writers &amp; managers - can understand. To build in the <em>virtual ramp</em> the entire team needs to be aware, develop the skill &amp; demand the necessary resources.</p>
-</section>
-
 <section id="intro" class="box">
 	<h2>Introduction</h2>
-	<p>A long term study<sup>[6]</sup> found low compliance rates with the Web Content Accessibility Guidelines (<abbr>WCAG</abbr>), but at the same time, uncovered a growing adherence to <em>some</em> criteria. A follow-up study<sup>[12]</sup> found that at least part of the improved accessibility was a side effect of changes in coding practices, new browser capabilities &amp; concerns over page rankings. In another study<sup>[10]</sup>, <em>lack of awareness &amp; knowledge of the <abbr>WCAG</abbr></em> was identified by the participants to be a significant barrier to web accessibility. These studies show that web teams continue to struggle with correct implementation of the <abbr>WCAG</abbr> &amp; suggest that aids that make the guidelines easier to understand could improve implementation. This action-base guide intends to do just that, present the guidelines in a way that keeps team members focused on accessibility &amp; building in the <em>virtual ramp</em>.</p> 
-
-	 <figure>
-	       <img src="images/ramp.png">
-	<figcaption>Each content type &amp; design decision is a potential barrier (stair). The numbers associate each stair with techniques for building in the <em>virtual ramp</em>.</figcaption>
+	<p>Presented here is an action-based guide to create accessible websites. The focus is on accessibility rather than compliance. The goal is to help teams create sites that are perceivable, operable, understandable &amp; robust. The <abbr>POUR</abbr> principles of the Web Content Accessibility Guidelines (WCAG 2.0) are what all the other layers of guidance in the <abbr>WCAG</abbr> aim to achieve. The simplified techniques presented here focus on decisions about content &amp; design that typically occur throughout the development process. Presented as decisions rather than success criteria, the layers of <abbr>WCAG</abbr> become more understandable and thus easier to integrate into the design &amp; development process. It&apos;s a team effort to build in the <em>virtual ramp</em> &amp; as we progress up the staircase, it takes more awareness, skills &amp; perhaps even a few resources to ensure content is accessible.</p>
+	<figure>
+	<img src="images/ramp-all.png">
+	<figcaption>Each content type &amp; design decision is a potential barrier (or stair). The numbers associate each stair with a list of techniques for building in the <em>virtual ramp</em>.</figcaption>
 	</figure>
+	
+	<p>A long term study<sup>[6]</sup> by Hanson &amp; Richards found low compliance rates with the Web Content Accessibility Guidelines (<abbr>WCAG</abbr>), but at the same time, uncovered a growing adherence to <em>some</em> criteria. A follow-up study<sup>[12]</sup> found that at least part of the improved accessibility was a side effect of changes in coding practices, new browser capabilities &amp; concerns over page rankings. In another study<sup>[10]</sup>, <em>lack of awareness &amp; knowledge of the <abbr>WCAG</abbr></em> was identified by the participants to be a significant barrier to web accessibility. These studies show that web teams continue to struggle with correct implementation of the <abbr>WCAG</abbr> &amp; suggest that aids that make the guidelines easier to understand could improve implementation. This action-base guide intends to do just that, present the guidelines in a way that keeps team members focused on accessibility &amp; building in the <em>virtual ramp</em>.</p> 
+
+ 
 </section>
 
 <section id="tech01" class="box">
-	<h2>1. Text &amp; Solid Code Base</h2>
+	<h2>1. Text &amp; Solid Structure</h2>
 	<p>Electronic text-based content is accessible by nature. It can be rendered visually, auditorily &amp; tactilely:</p>
 	<ul>
 		<li>Use HTML&apos;s built-in semantic structure<sup>[1,4,8]</sup> to code meaning directly into your content:
@@ -151,10 +149,15 @@
 	<p>Creating websites that meet the needs of people with disabilities overlaps with people with situational limitations such as being in a loud environment, having limited use of hands, using a mobile device, using old hardware or having limited access to bandwidth<sup>[7]</sup>. Just as access ramps &amp; curb cuts benefit more than just people in wheelchairs, the <i>virtual ramp</i> or <i>electronic curb cut</i><sup>[9]</sup> benefits more than just people using assistive technology. Making accessibility a priority in the design process helps us build better websites &amp; brings us closer to a universal web<sup>[7]</sup>. </p>
 </section>
 
+<section id="acks" class="box"> 
+	<h2>Acknowledgements</h2>
+	<p>Special thanks to the <a href="http://www.accessibleicon.org/icon.html"><cite>Accessible Icon Project</cite></a> for a beautiful icon.</p>
+</section>
+
 <section id="references" class="box"> 
 	<h2>References</h2>
 <ol>
-	<li>(2013) Semantic Structure. <a href="http://webaim.org/techniques/semanticstructure/">WebAIM.org</a>.</li>
+	<li>(2013). Semantic Structure. <a href="http://webaim.org/techniques/semanticstructure/">WebAIM.org</a>.</li>
 	<li><a href="http://wikipedia.org/wiki/Don't_repeat_yourself">Don&apos;t repeat yourself</a>. Wikipedia.</li>
 	<li>Brewer, C., Harrower, M. &amp; Pennsylvania State University. <i><a href="http://colorbrewer2.org/">Color Brewer 2.0</a></i>. </li>
 	<li>Clark, J. (2003). <i>Building accessible websites</i>. Indianapolis: New Riders.</li>
@@ -174,9 +177,13 @@
 </ol>
 </section>
 
-<section id="acks" class="box"> 
-	<h2>Acknowledgements</h2>
-	<p>Special thanks to the <a href="http://www.accessibleicon.org/icon.html"><cite>Accessible Icon Project</cite></a> for a beautiful icon.</p>
+<section id="resources" class="box"> 
+	<h2>Resources</h2>
+<ol>
+	<li>Watson, L. (2013) <em>Rock &apos;n roll guide to HTML5 and <abbr title="Accessible Rich Internet Application">ARIA</abbr></em> <a href="https://www.youtube.com/watch?v=GgserrcH6nQ">https://www.youtube.com/watch?v=GgserrcH6nQ</a> #ID24 2014.</li>
+	<li>Watson, L. (2014). Design like you give a damn: Practical accessibility for web pros<a href="https://www.youtube.com/watch?v=vK1tlLOavvM">https://www.youtube.com/watch?v=vK1tlLOavvM</a> W3Conf 2013.</li>
+	<li>Smith, T. (2014) <em>Making Web Content Accessible in 10 Steps or Less</em> <a href="http://www.delts.mun.ca/oew.php">http://www.delts.mun.ca/oew.php</a> OEW 2014.</li>
+</ol>
 </section>
 </main>
 <footer role="contentinfo">
